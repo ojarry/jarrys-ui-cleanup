@@ -1,0 +1,29 @@
+license="MIT"
+
+[[mods]]
+modId="jarrys_ui_cleanup"
+version="${mod_version}"
+displayName="Jarry's UI Cleanup"
+authors="Jarry"
+logoFile="assets/jarrys_ui_cleanup/icon.png"
+iconFile="assets/jarrys_ui_cleanup/icon.png"
+description='''
+All-in-one, client-side menu cleanup: no Realms or feedback buttons, no backup/experimental warnings, no chat-report button, a dark crimson Jarry loading screen, fewer popups, faster loading, telemetry off, and an optional built-in Dark UI resource pack. Every feature can be switched off.
+'''
+
+[[mixins]]
+config="jarrys_ui_cleanup.mixins.json"
+
+[[dependencies.jarrys_ui_cleanup]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.jarrys_ui_cleanup]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"

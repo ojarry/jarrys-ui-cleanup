@@ -1,0 +1,28 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.jarry.uicleanup.mixin",
+	"plugin": "net.jarry.uicleanup.mixin.UiMixinPlugin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AbstractContainerScreenMixin",
+		"AbstractRecipeBookScreenAccessor",
+		"ChatSigningMixin",
+		"ClientTelemetryManagerMixin",
+		"GuiGraphicsExtractorMixin",
+		"GuiMixin",
+		"KeyboardHandlerMixin",
+		"LevelLoadTrackerMixin",
+		"LoadingOverlayMixin",
+		"PlayerEntryMixin",
+		"TitleScreenMixin",
+		"ToastManagerMixin",
+		"WorldOpenFlowsMixin",
+		"AdvancementsScreenMixin",
+		"RecipeToastMixin",
+		"TutorialToastMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

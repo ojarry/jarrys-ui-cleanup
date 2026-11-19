@@ -1,0 +1,49 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+eclipse/
+out/
+bin/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft run / smoke-test output
+run-client/
+run-server/
+run/
+prodtest/
+shots/
+logs/
+saves/
+crash-reports/
+.fabric/
+*.log
+hs_err_pid*
+
+# Built jars and local test mods (keep the Gradle wrapper)
+dist/
+libs/
+*.jar
+!gradle-wrapper.jar
+!**/gradle-wrapper.jar
+
+# Secrets and local machine config
+.env
+.env.*
+*.token
+local.properties
+
+# Local scratch and generated reports
+coverage/

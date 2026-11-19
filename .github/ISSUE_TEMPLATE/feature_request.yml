@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest an improvement or a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Tell us what you would like Jarry's UI Cleanup to do.
+  - type: textarea
+    id: idea
+    attributes:
+      label: The request
+      description: What should be added or changed, and why would it help?
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Which loaders should this apply to?
+      multiple: true
+      options:
+        - Fabric
+        - NeoForge
+        - All of them
+    validations:
+      required: false
+  - type: input
+    id: game-version
+    attributes:
+      label: Minecraft version you use
+      placeholder: "26.3, 26.2, ..."
+    validations:
+      required: false
+  - type: textarea
+    id: extras
+    attributes:
+      label: Extra context
+      description: Mockups, examples, or how you would use this in-game.
+    validations:
+      required: false

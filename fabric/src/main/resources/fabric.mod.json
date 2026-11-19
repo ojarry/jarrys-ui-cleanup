@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "jarrys_ui_cleanup",
+	"version": "${version}",
+	"name": "Jarry's UI Cleanup",
+	"description": "All-in-one, client-side menu cleanup: no Realms or feedback buttons, no backup/experimental warnings, no chat-report button, a dark crimson Jarry loading screen, fewer popups, faster loading, telemetry off, and an optional built-in Dark UI resource pack. Every feature can be switched off.",
+	"authors": ["Jarry"],
+	"license": "MIT",
+	"icon": "assets/jarrys_ui_cleanup/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["net.jarry.uicleanup.fabric.UiCleanupFabric"],
+		"modmenu": ["net.jarry.uicleanup.fabric.ModMenuIntegration"]
+	},
+	"mixins": ["jarrys_ui_cleanup.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.17.0",
+		"minecraft": "${mc_dep}",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": { "modmenu": "*" }
+}

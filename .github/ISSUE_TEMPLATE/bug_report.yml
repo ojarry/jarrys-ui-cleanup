@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a crash, a missing feature that should already work, or other broken behavior
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a problem with Jarry's UI Cleanup. Please fill in as much as you can.
+  - type: input
+    id: game-version
+    attributes:
+      label: Minecraft version
+      placeholder: "26.3, 26.2, ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options:
+        - Fabric
+        - NeoForge
+    validations:
+      required: true
+  - type: input
+    id: loader-version
+    attributes:
+      label: Loader version
+      placeholder: "Fabric Loader 0.20.1, NeoForge 26.3.0.113, ..."
+    validations:
+      required: false
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      placeholder: "1.0.2"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps you took, starting from a new world if you can.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash report
+      description: Paste the latest log excerpt or crash report, or drag the file into this issue.
+    validations:
+      required: false
+  - type: textarea
+    id: other
+    attributes:
+      label: Other mods and notes
+      description: Anything else that might matter, such as other mods, a resource pack, or a server vs singleplayer.
+    validations:
+      required: false
